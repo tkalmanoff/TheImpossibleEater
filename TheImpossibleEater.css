@@ -1,6 +1,6 @@
 body{
-	font-family: 'Sorts Mill Goudy'; /*|Cabin+Sketch|Forum|IM+Fell+English|Pompiere|Bad+Script|Walter+Turncoat|Bevan|Questrial|Amatic+SC|Coming+Soon
-	*/font-size: 30px;
+    font-family: 'Sorts Mill Goudy', serif;
+	font-size: 20px;
 }
 
 #frame{
@@ -15,7 +15,7 @@ body{
 
 li{
 	display:inline-block;
-	padding: 20px;
+	padding: 10px 5px 10px 5px;
 }
 
 /*Title*/
@@ -24,20 +24,32 @@ li{
     text-align: center;
     margin-left: 200px;
     margin-right: 200px;
-    margin-bottom: 20px;
-    margin-top: 100px;
+    margin-bottom: 10px;
+    margin-top: 20px;
     padding: 20px;
-    font-family: 'Walter Turncoat', cursive;
-    font-size: 50px;
-/*    text-transform: uppercase;
-*/}
+    font-family: 'Amatic SC', cursive;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+    font-size: 60px;
+}
 
 #subtitle{
     font-size: 25px;
-    font-family: 'Coming Soon', cursive;
+    font-family: 'Josefin Sans', sans-serif;    
+    letter-spacing: 1px;
 }
 
-/*Navigation Bar (off center) */
+#logoimg{
+    width:425px;
+    height:275px;
+}
+
+#logo{
+    padding:auto 0;
+    margin:auto 0;
+}
+
+/*Navigation Bar*/
 
 a:link {
     text-decoration: none;
@@ -51,22 +63,25 @@ a:visited {
 
 a:hover {
     color: grey;
+    text-decoration: underline;
 }
 
 a:active {
     text-decoration: underline;
 }
 
-/*Dropdown Menu for Recipies*/
+/*Dropdown Menu for Recipies (doest stay dropped) http://codepen.io/philhoyt/pen/ujHzd */
 #nav ul{
     position:relative;
     float:center;
     margin:20px;
     padding:20px;
     text-align: center;
-    font-size: 15px;
+    font-size: 25px;
     background-color: white;
-    opacity: .75;
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 3px;
+    text-transform: uppercase;
     }
 }
 
@@ -80,11 +95,7 @@ a:active {
 #nav ul li{
     position:relative;
     float:center;
-    padding:10px 50px 10px 50px;
-}
-
-#nav ul li:hover{
-    background:#f6f6f6
+    padding:10px;
 }
 
 #nav ul ul{
@@ -93,7 +104,8 @@ a:active {
     top:100%;
     left:0;
     background:#fff;
-    padding:0
+    padding:0;
+    opacity: .75;
 }
 
 #nav ul ul li{
@@ -115,18 +127,19 @@ a:active {
     display:block
 }
 
+
 /*Center Photo*/
 
-.center{
+.centerphotos{
 	margin: 0 auto;
-	text-align: center
+	text-align: center;
+    padding: 20px;
 }
 
 /*Content Home Page*/
 
-.words{
-    padding: 100px 20px 20px 20px;
-    margin: 20px;
+.content{
+    padding:20px;
 }
 
 /*Footer*/
