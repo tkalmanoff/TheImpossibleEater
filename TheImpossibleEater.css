@@ -1,0 +1,144 @@
+body{
+	font-family: 'Sorts Mill Goudy'; /*|Cabin+Sketch|Forum|IM+Fell+English|Pompiere|Bad+Script|Walter+Turncoat|Bevan|Questrial|Amatic+SC|Coming+Soon
+	*/font-size: 30px;
+}
+
+#frame{
+	background-color:white;
+	margin-right: 100px;
+	margin-left: 100px;
+}
+
+.center{
+    text-align: center;
+}
+
+li{
+	display:inline-block;
+	padding: 20px;
+}
+
+/*Title*/
+
+#title{
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    padding: 20px;
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 50px;
+/*    text-transform: uppercase;
+*/}
+
+#subtitle{
+    font-size: 25px;
+    font-family: 'Coming Soon', cursive;
+}
+
+/*Navigation Bar (off center) */
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    color: grey;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+/*Dropdown Menu for Recipies*/
+#nav ul{
+    position:relative;
+    float:center;
+    margin:20px;
+    padding:20px;
+    text-align: center;
+    font-size: 15px;
+    background-color: white;
+    opacity: .75;
+    }
+}
+
+#nav ul a{
+    display:block;
+    text-decoration:none;
+    font-weight:700;
+    padding:0 15px;
+}
+
+#nav ul li{
+    position:relative;
+    float:center;
+    padding:10px 50px 10px 50px;
+}
+
+#nav ul li:hover{
+    background:#f6f6f6
+}
+
+#nav ul ul{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#fff;
+    padding:0
+}
+
+#nav ul ul li{
+    float:none;
+    width:200px
+}
+
+#nav ul ul a{
+    line-height:120%;
+    padding:10px 15px
+}
+
+#nav ul ul ul{
+    top:0;
+    left:100%
+}
+
+#nav ul li:hover > ul{
+    display:block
+}
+
+/*Center Photo*/
+
+.center{
+	margin: 0 auto;
+	text-align: center
+}
+
+/*Content Home Page*/
+
+.words{
+    padding: 100px 20px 20px 20px;
+    margin: 20px;
+}
+
+/*Footer*/
+
+.footer{
+	background-color: white;
+	opacity: .85;
+	font-size: 30px;
+	text-align: center;
+	margin-right: 200px;
+	margin-left: 200px;
+	padding: 100px, 150px, 100px, 100px;
+	word-spacing:60px;
+}
+
