@@ -20,74 +20,99 @@
 
 	</head>
 	<body>
-	<div id="frame" class="center">
-		<div id="resting">
-			<div id="nav">
-				<ul>
-	  				<li>
-	  					<a href="About.html">
-	 						About
-	 					</a>
-	 				</li>
-	  				<li>
-	  				<a href="Recipes.html">
-	  					Recipes
-	  				</a>
-	    				<ul>
-					      <li><a href="# link">Appetizers</a></li>
-					      <li><a href="# link">Entres</a></li>
-					      <li><a href="# link">Desserts</a></li>
-	    				</ul>
-	  				</li>
-	  				<li id="logo">
-	  					<img id="logoimg" src="IMG_7513.PNG">
-	  				</li>
-	 				<li>
-	 					<a href="Nutrition.html">
-	 						Nutrition
-	 					</a>
-	 				<li>
-	 					<a href="Contact.html">
-	 						Contact
-	 					</a>
-	 				</li>
-	 			</ul>
-	 		</div>
-	 		<div id="subtitle">
-				 A gluten and dairy free blog for the dietarily challenged
+		<nav id="primary_nav_wrap">
+			<ul>
+			  <li>
+			  	<a href="About.html">About</a>
+			  </li>
+			  <li>
+			  	<a href="Recipes.html">Recipes</a>
+			    	<ul>
+				      <li><a href="Appetizers.html">Appetizers</a></li>
+				      <li><a href="Entres.htlm">Entres</a></li>
+				      <li><a href="Desserts.html">Desserts</a></li>
+			  		</ul>
+			  	<li id="logo">
+				      	<a href="TheImpossibleEater.html">
+			  				<img id="logoimg" src="IMG_7513 small.PNG">
+			  			</a>
+			  	</li>
+				<li>
+					<a href="Nutrition.html">Nutrition</a>
+				</li>
+				<li>
+					<a href="Contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	 	<div id="frame" class="center">
+		 	<div id="subtitle">
+					 <p>A gluten and dairy free blog for the dietarily challenged</p>
 			</div>
-
-	 	</div>
-			<img id="centerphotos" src="bluberriesbanana.jpg">
-		<div id="content">
+			<!-- Scroll -->
+		<div id="scroller" style="width: 640px; height: 640px; margin: 0 auto;">
+			<div class="innerScrollArea">
+				<ul>
+					<li><img id="centerphotos" src="bluberriesbanana.jpg"></li>
+		            <li><img src="10325175_283319755182432_5695103775184325332_n.jpg" width="640" height="640" /></li>
+		            <li><img src="10385311_309951512519256_8214923847044859701_n.jpg" width="640" height="640" /></li>
+		            <li><img src="10390475_283319891849085_7115063674475833823_n.jpg" width="640" height="640" /></li>
+		            <li><img src="10409618_385034701677603_1375762611938489393_n.jpg" width="640" height="640" /></li>
+		            <li><img src="10413398_388717701309303_7738198035300109010_n.jpg" width="640" height="640" /></li>
+		            <li><img src="10443445_290758254438582_4135931653841213215_n.jpg" width="640" height="640" /></li>
+		            <li><img src="10524352_311420735705667_2176474758331292032_n.jpg" width="640" height="640" /></li>
+		            <li><img src="10561628_314179315429809_8783792517136622357_n.jpg" width="640" height="640" /></li>
+		        </ul>
+	    	</div>
+		</div>
+			<div id="content">
 				<p>
 					You are what you eat. Eat healthy, be well.
 				</p>
-		</div>
+			</div>
 		</div>
 		<div class="footer">
-		<ul class="center">
+			<ul class="center">
 				<li>
-					<a href="Bakery - Twitter.html">
+					<a href="TwitterLINK">
 						<img src="twitter.png">
 					</a>
 
 				</li>
 				<li>
-					<a href="Bakery - Facebook.html">
+					<a href="FacebookLINK">
 						<img src="facebook.png">
 					</a>
 
 				</li>
 				<li>
-					<a href="Bakery - Instagram.html">
+					<a href="InstagramLINK">
 						<img src="instagram.png">
 					</a>
 				</li>
 			</ul>
  		</div>
 
-		 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+
+		<script type="text/javascript">
+		    $(function(){
+		        var scroller = $('#scroller div.innerScrollArea');
+		        var scrollerContent = scroller.children('ul');
+		        scrollerContent.children().clone().appendTo(scrollerContent);
+		        var curX = 0;
+		        scrollerContent.children().each(function(){
+		            var $this = $(this);
+		            $this.css('left', curX);
+		            curX += $this.outerWidth(true);
+		        });
+		        var fullW = curX / 2;
+		        var viewportW = scroller.width();
+
+		        scroller.css('overflow-x', 'auto');
+		    });
+		</script>
 	</body>
 </html>

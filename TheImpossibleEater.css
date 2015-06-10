@@ -15,41 +15,17 @@ body{
 
 li{
 	display:inline-block;
-	padding: 10px 5px 10px 5px;
 }
 
-/*Title*/
-
-#title{
-    text-align: center;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    padding: 20px;
-    font-family: 'Amatic SC', cursive;
-    word-spacing: 10px;
-    letter-spacing: 3px;
-    font-size: 60px;
-}
-
-#subtitle{
-    font-size: 25px;
-    font-family: 'Josefin Sans', sans-serif;    
-    letter-spacing: 1px;
-}
-
-#logoimg{
-    width:425px;
-    height:275px;
-}
-
-#logo{
-    padding:auto 0;
-    margin:auto 0;
-}
 
 /*Navigation Bar*/
+/*#nav{
+    background: white;
+    background-opacity: 0.75;
+    text-align: center;
+    vertical-align: center;
+    float:center;
+}*/
 
 a:link {
     text-decoration: none;
@@ -70,63 +46,113 @@ a:active {
     text-decoration: underline;
 }
 
-/*Dropdown Menu for Recipies (doest stay dropped) http://codepen.io/philhoyt/pen/ujHzd */
-#nav ul{
-    position:relative;
-    float:center;
-    margin:20px;
-    padding:20px;
+/*Dropdown Menu for Recipies*/
+
+#primary_nav_wrap
+{
+    background: white;
     text-align: center;
-    font-size: 25px;
-    background-color: white;
-    font-family: 'Amatic SC', cursive;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    }
+    vertical-align: center;
+    float:center;
+    margin: 0px 100px 0px 90px;
+    border-bottom: double;
 }
 
-#nav ul a{
+#primary_nav_wrap ul
+{
+    list-style:none;
+    position:relative;
+    padding:0;
+}
+
+#primary_nav_wrap ul a
+{
     display:block;
     text-decoration:none;
-    font-weight:700;
+    line-height:32px;
     padding:0 15px;
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 3px;
+    font-size: 30px;
 }
 
-#nav ul li{
+#primary_nav_wrap ul li
+{
     position:relative;
     float:center;
-    padding:10px;
+    margin:0;
+    padding:25px;
+    margin: 10px;
+    text-align: center;
 }
 
-#nav ul ul{
+#primary_nav_wrap ul li:hover
+{
+    color:#f6f6f6;
+/*    text-decoration: underline;
+*/}
+
+#primary_nav_wrap ul ul
+{
     display:none;
     position:absolute;
     top:100%;
     left:0;
     background:#fff;
     padding:0;
-    opacity: .75;
 }
 
-#nav ul ul li{
+#primary_nav_wrap ul ul li
+{
     float:none;
     width:200px
 }
 
-#nav ul ul a{
+#primary_nav_wrap ul ul a
+{
     line-height:120%;
     padding:10px 15px
 }
 
-#nav ul ul ul{
+#primary_nav_wrap ul ul ul
+{
     top:0;
-    left:100%
+    left:100%;
 }
 
-#nav ul li:hover > ul{
-    display:block
+#primary_nav_wrap ul li:hover > ul
+{
+    display:block;
+    float: left;
+    padding: 0;
+    margin: 0;
 }
 
+
+#logoimg{
+    width:285px;
+    height:244px;
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+    vertical-align: center;
+}
+
+#logo{
+    margin: 0;
+    padding: 0;
+}
+
+/*Content*/
+
+#subtitle{
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;    
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
 
 /*Center Photo*/
 
@@ -141,7 +167,29 @@ a:active {
 .content{
     padding:20px;
 }
-
+/*Scroll*/
+#scroller {
+    position: relative;
+}
+#scroller .innerScrollArea {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+#scroller ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+#scroller li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
+}
 /*Footer*/
 
 .footer{
